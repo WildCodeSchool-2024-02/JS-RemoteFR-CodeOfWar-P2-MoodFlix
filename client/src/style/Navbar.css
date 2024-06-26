@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.site-navbar {
+  background-color: #18122b;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.site-title {
+}
+
+.user-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.people {
+  width: 1.8rem;
+}
+
+.user-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3a3053;
+  color: rgb(243, 236, 236);
+  border: none;
+  font-size: medium;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  width: 8rem;
+}
+
+.user-buttons:hover {
+  box-shadow: 0 0 20px;
+}
+
+.sign-up {
+  gap: 0.5rem;
+}
+
+.login {
+  gap: 0.7rem;
+}

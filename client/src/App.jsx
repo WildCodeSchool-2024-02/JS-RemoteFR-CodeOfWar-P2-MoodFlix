@@ -1,7 +1,7 @@
-import "./styles/Global.css";
+import Navbar from "./components/Navbar";
 import HomeImages from "./components/HomeImages";
-import "./App.css";
 import HomeCard from "./components/HomeCard";
+import "./style/Global.css";
 import "./styles/HomeCard.css";
 
 const cardsData = [
@@ -26,6 +26,7 @@ const cardsData = [
 function App() {
   return (
     <main className="container">
+      <Navbar />
       <HomeImages />
       <HomeCard title={cardsData[0].title} content={cardsData[0].content} />
     </main>
