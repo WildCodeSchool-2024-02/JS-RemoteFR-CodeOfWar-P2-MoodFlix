@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "../style/homeImages.css";
+import "../style/HomeImages.css";
 import fetchMovies from "../utils/fetchMovies";
 import baseImageUrl from "../utils/baseImageUrl";
 
