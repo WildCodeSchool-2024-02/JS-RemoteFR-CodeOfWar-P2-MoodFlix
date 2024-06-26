@@ -1,38 +1,11 @@
-import axios from "axios";
 import "./App.css";
-import { useState } from "react";
 
 function App() {
-  // Déclarer un état pour stocker le titre du film
-  const [title, setTitle] = useState("Jurassic");
-
-  // Fonction appelée lors du clic sur le bouton
-  const handleClick = () => {
-    // 👇 Changer l'URL pour récupérer un film spécifique depuis The Movie DB
-    const url = `https://api.themoviedb.org/3/movie/200?language=fr&api_key=${import.meta.env.VITE_API_KEY}`;
-    
-    // Effectuer une requête GET à l'API avec axios
-    axios.get(url)
-      .then(response => {
-        // 👇 Mettre à jour l'état du titre avec le titre du film récupéré
-        setTitle(response.data.title);
-      })
-      .catch(error => {
-        console.error('Erreur lors de la récupération du film :', error);
-      });
-  }
-
   return (
     <main className="container">
-      {/* Bouton pour déclencher la recherche du film */}
-      <input type="button" onClick={handleClick} value="MOODFLIX 🎥"/>
-      {/* Affichage du titre du film */}
-      <p>Titre: {title}</p>
-      {/* Exemple d'un autre input */}
-      <input type="number" defaultValue={11}/>
+      <p>Yes</p>
     </main>
   );
 }
 
 export default App;
-
