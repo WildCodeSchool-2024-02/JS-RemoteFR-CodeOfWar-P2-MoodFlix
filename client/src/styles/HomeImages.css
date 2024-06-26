@@ -1,0 +1,28 @@
+body {
+  overflow: hidden;
+}
+
+section.home-image {
+  display: none;
+}
+
+@media (min-width: 1280px) {
+  section.home-image {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50rem;
+    gap: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+  }
+
+  section.home-image > img {
+    width: 15rem;
+  }
+
+  section.home-image > img:nth-child(3) {
+    padding-left: 7.5%;
+  }
+}

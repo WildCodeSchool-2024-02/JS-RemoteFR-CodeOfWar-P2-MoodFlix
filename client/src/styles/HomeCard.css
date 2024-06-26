@@ -1,0 +1,31 @@
+.HomeCard {
+  display: flex;
+  width: 400px;
+  padding: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 8px;
+  background: linear-gradient(96deg, #393053 0%, #635986 100%);
+  color: white;
+}
+
+.HomeCard > title {
+  color: var(--primary-font-color, #fff);
+  font-family: "Fira Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.HomeCard > content {
+  align-self: stretch;
+  color: var(--primary-font-color, #fff);
+  font-family: "Fira Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
