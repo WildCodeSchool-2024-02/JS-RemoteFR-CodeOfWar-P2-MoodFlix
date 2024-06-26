@@ -1,4 +1,4 @@
-import "../style/Navbar.css";
+import "../styles/Navbar.css";
 import SvgPerson from "../assets/svg/person.svg";
 import SvgPeople from "../assets/svg/people.svg";
 

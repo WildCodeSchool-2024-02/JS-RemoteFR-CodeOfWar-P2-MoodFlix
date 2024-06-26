@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar";
 import HomeImages from "./components/HomeImages";
 import HomeCard from "./components/HomeCard";
-import "./style/Global.css";
+import "./styles/Global.css";
 import "./styles/HomeCard.css";
 
 const cardsData = [
