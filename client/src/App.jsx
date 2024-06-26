@@ -1,5 +1,6 @@
 import "./style/Global.css";
 import HomeImages from "./components/HomeImages";
+import "./App.css";
 
 function App() {
   return (
