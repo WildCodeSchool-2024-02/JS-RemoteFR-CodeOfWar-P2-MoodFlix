@@ -1,4 +1,4 @@
-import "./style/Global.css";
+import "./styles/Global.css";
 import HomeImages from "./components/HomeImages";
 import "./App.css";
 import HomeCard from "./components/HomeCard";
