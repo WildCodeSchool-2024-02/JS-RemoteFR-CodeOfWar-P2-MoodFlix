@@ -1,31 +1,22 @@
 .HomeCard {
   display: flex;
-  width: 400px;
-  padding: 16px;
+  width: 26rem;
+  padding: 1.5rem;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 10px;
+  gap: 1rem;
   border-radius: 8px;
   background: linear-gradient(96deg, #393053 0%, #635986 100%);
-  color: white;
+  cursor: pointer;
 }
 
-.HomeCard > title {
-  color: var(--primary-font-color, #fff);
-  font-family: "Fira Sans";
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+.HomeCard > h2 {
+  font-size: 1.6rem;
 }
 
-.HomeCard > content {
-  align-self: stretch;
-  color: var(--primary-font-color, #fff);
-  font-family: "Fira Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+main.homepage > section.left > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
 }

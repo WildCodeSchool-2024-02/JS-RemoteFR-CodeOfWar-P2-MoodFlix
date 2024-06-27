@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 export default function HomeCard({ title, content }) {
   return (
@@ -12,4 +12,4 @@ export default function HomeCard({ title, content }) {
 HomeCard.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
-}
+};

@@ -5,18 +5,15 @@
 }
 
 .site-navbar {
-  background-color: #18122b;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 1rem;
 }
 
-.site-title {
-}
-
 .user-actions {
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  gap: 2rem;
 }
 
 .people {
@@ -27,13 +24,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
+
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+
   background-color: #3a3053;
   color: rgb(243, 236, 236);
+
   border: none;
-  font-size: medium;
-  padding: 0.5rem;
   border-radius: 0.5rem;
-  width: 8rem;
+  cursor: pointer;
 }
 
 .user-buttons:hover {
@@ -46,4 +48,16 @@
 
 .login {
   gap: 0.7rem;
+  border-radius: 0.5rem;
+  background-color: var(--secondary-black, #443c68);
+  box-shadow: 0px 0px 16.8px 0px var(--thrid-black, #635986);
+}
+
+nav.site-navbar {
+  padding: 2.4rem 3rem;
+}
+
+nav.site-navbar > h1 {
+  font-size: 2.5rem;
+  font-weight: 400;
 }
