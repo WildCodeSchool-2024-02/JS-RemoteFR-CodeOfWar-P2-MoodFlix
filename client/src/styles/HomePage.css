@@ -1,0 +1,35 @@
+main.homepage > section.left > h2 {
+  text-shadow: 0px 0px 31px var(--secondary-black, #443c68);
+  font-size: 3rem;
+  font-weight: 400;
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+
+main.homepage > section.left > h2 > span {
+  font-weight: 400;
+  background: linear-gradient(90deg, #443c68 0%, #8777ce 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+main.homepage > section.left {
+  display: flex;
+  max-width: 70rem;
+  padding: 7.25rem 5.3125rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 7.25rem;
+}
+
+main.homepage > section.left > h3 {
+  opacity: 0.6;
+  color: var(--primary-font-color, #fff);
+  text-align: center;
+  font-family: "Fira Sans";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
