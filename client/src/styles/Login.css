@@ -11,10 +11,11 @@
 .login-container {
   display: flex;
   border-radius: 2rem;
-  border: solid red;
-  margin: 10rem auto;
-  height: 40rem;
-  width: 80rem;
+  background-color: #3a3053;
+
+  margin: 4rem auto;
+  height: 30rem;
+  width: 60rem;
 }
 
 .form-container {
@@ -34,4 +35,33 @@
   object-fit: cover;
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
+}
+
+/* FORM */
+
+.login-form-container h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.login-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-left: 5rem;
+}
+
+.login-form-container input {
+  width: 20rem;
+  background-color: #635986;
+  border: none;
+  border-radius: 0.4rem;
+  height: 2rem;
+}
+
+.options-container {
+  display: flex;
+  justify-content: space-between;
 }
