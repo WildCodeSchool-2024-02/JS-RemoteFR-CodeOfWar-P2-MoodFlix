@@ -2,33 +2,29 @@ import { Link } from "react-router-dom";
 
 function LoginForm() {
     return (
-        <>
-            <div className="login-container">
-                <h2>WELCOME BACK👋</h2>
-                <form action="#">
-                    <label htmlFor="email" name="email">MAIL ADRESS</label>
-                    <input type="email" id="email" />
 
-                    <label htmlFor="password" name="password">PASSWORD</label>
-                    <input type="password" id="password" />
+        <div className="login-container">
+            <h2>WELCOME BACK👋</h2>
+            <form action="#">
+                <label htmlFor="email" name="email">MAIL ADRESS</label>
+                <input type="email" id="email" />
 
-                    <div className="checkbox-container">
-                        <input type="checkbox" name="checkbox" id="checkbox" />
-                        <label htmlFor="checkbox">REMEMBER ME</label>
-                    </div>
+                <label htmlFor="password" name="password">PASSWORD</label>
+                <input type="password" id="password" />
 
-                    <div className="forgot-password">
-                        <Link to="/forgot">FORGOT PASSWORD?</Link>
-                    </div>
+                <div className="checkbox-container">
+                    <input type="checkbox" name="checkbox" id="checkbox" />
+                    <label htmlFor="checkbox">REMEMBER ME</label>
+                </div>
 
-                    <button type="submit">LOGIN</button>
+                <div className="forgot-password">
+                    <Link to="/forgot">FORGOT PASSWORD?</Link>
+                </div>
 
-                </form>
-            </div>
-            <div className="login-img">
-                <img src="" alt="" />
-            </div>
-        </>
+                <button type="submit">LOGIN</button>
+
+            </form>
+        </div>
     );
 };
 
