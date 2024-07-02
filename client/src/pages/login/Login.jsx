@@ -1,5 +1,6 @@
 import Navbar from "../../components/Navbar";
 import LoginForm from "./LoginForm";
+import LoginImage from "../../assets/images/social-network.jpeg";
 
 function Login() {
     return (
@@ -9,6 +10,9 @@ function Login() {
             </div>
             <div>
                 <LoginForm />
+            </div>
+            <div className="login-img">
+                <img src={LoginImage} alt="" />
             </div>
         </>
     );
