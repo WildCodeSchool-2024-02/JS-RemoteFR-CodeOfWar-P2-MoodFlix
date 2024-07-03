@@ -4,6 +4,24 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App";
+import Film from "./pages/film/Film";
+import fetchFilm, { fetchCrew, fetchImage } from "./utils/fetchFilm";
+
+function loaderFilm({ params }) {
+  const { id } = params;
+  return Promise.all([
+    fetchFilm(id),
+    fetchCrew(id),
+    fetchImage(id),
+  ]).then(responses => {
+    const [responseFilm, responseCrew, responseImage] = responses;
+    return {
+      film: responseFilm,
+      crew: responseCrew,
+      image: responseImage,
+    }
+  })
+}
 
 const router = createBrowserRouter([
   {
@@ -20,7 +38,8 @@ const router = createBrowserRouter([
   },
   {
     path: "/film/:id",
-    element: <App />,
+    element: <Film />,
+    loader: loaderFilm,
   },
   {
     path: "/profile",
@@ -39,3 +58,4 @@ root.render(
     <RouterProvider router={router} />
   </React.StrictMode>
 );
+
