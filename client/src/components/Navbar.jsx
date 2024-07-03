@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
 import SvgPerson from "../assets/svg/person.svg";
 import SvgPeople from "../assets/svg/people.svg";
@@ -11,10 +12,12 @@ export default function Navbar() {
           <img className="svg person" alt="sign in button" src={SvgPerson} />
           <p>Sign Up</p>
         </button>
-        <button type="button" className="user-buttons login">
-          <img className="svg people" alt="login button" src={SvgPeople} />
-          Login
-        </button>
+        <Link to="/Login">
+          <button type="button" className="user-buttons login">
+            <img className="svg people" alt="login button" src={SvgPeople} />
+            Login
+          </button>
+        </Link>
       </div>
     </nav>
   );
