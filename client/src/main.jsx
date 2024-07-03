@@ -4,6 +4,8 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App";
+import getMoviesByMood from "./services/getMoviesByMood";
+import Tag from "./pages/tag/Tag";
 
 const router = createBrowserRouter([
   {
@@ -28,7 +30,8 @@ const router = createBrowserRouter([
   },
   {
     path: "/mood/:mood",
-    element: <App />,
+    element: <Tag />,
+    loader: ({ params }) => getMoviesByMood(params.mood),
   },
 ]);
 
