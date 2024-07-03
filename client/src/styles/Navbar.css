@@ -20,6 +20,10 @@
   width: 1.8rem;
 }
 
+Link {
+  text-decoration: none;
+}
+
 .user-buttons {
   display: flex;
   justify-content: center;
@@ -36,6 +40,7 @@
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .user-buttons:hover {
