@@ -5,6 +5,16 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App";
 
+// page components
+
+import Profile from "./pages/profile/Profile";
+
+// page styles
+
+import "./styles/profileCard.css";
+
+// router creation
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -24,7 +34,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/profile",
-    element: <App />,
+    element: <Profile />,
   },
   {
     path: "/mood/:mood",
