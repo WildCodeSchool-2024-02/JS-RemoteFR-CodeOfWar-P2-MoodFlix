@@ -1,14 +1,21 @@
 
 import { useLoaderData } from "react-router-dom";
 import Navbar from "../../components/Navbar";
-
+import Detail from "./Detail";
+import Crew from "./Crew";
+import Synopsis from "./Synopsis";
+import Image from "./Image";
 
 function Film() {
-const film = useLoaderData()
+  const { film } = useLoaderData()
+  console.info(film)
     return (
       <main className="film">
         <Navbar />
-            <h1>{film.title}</h1>
+            <Image />
+            <Detail film={film} />
+            <Synopsis />
+            <Crew />
 
       </main>
     );
