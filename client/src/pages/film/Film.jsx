@@ -14,9 +14,10 @@ function Film() {
         <Navbar />
             <Image />
             <Detail film={film} />
-            <Synopsis />
-            <Crew />
-
+          <section className="secondPart">
+              <Synopsis />
+              <Crew />
+          </section>
       </main>
     );
   }
