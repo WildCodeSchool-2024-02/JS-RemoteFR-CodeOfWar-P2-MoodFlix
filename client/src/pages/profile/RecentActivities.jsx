@@ -1,7 +1,7 @@
 function RecentActivities() {
   return (
     <section>
-      <h1>Recent Activities</h1>
+      <h1 className="secondTitle">Recent Activities</h1>
       <div id="LastMovies">
         <img
           className="NewMovies"

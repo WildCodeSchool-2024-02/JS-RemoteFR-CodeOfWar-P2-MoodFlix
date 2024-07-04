@@ -8,38 +8,40 @@
   padding: 0;
 }
 
-section {
+div.Profile > section {
   margin: 4rem auto;
 }
 
 .UserInfo {
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  margin-left: 20%;
   gap: 2rem;
 }
 
 .UserInfo > .icon {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   flex-shrink: 0;
   border-radius: 150px;
+  margin-bottom: 3rem;
 }
 
 .UserInfo > .pseudo {
-  width: 150px;
-  height: 44px;
+  width: 500px;
+  height: 50px;
   flex-shrink: 0;
   border-radius: 25px;
   background: rgba(217, 217, 217, 0.15);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
+  font-size: 50px;
 }
 
 .UserInfo > .link {
-  width: 150px;
-  height: 44px;
+  width: 500px;
+  height: 50px;
   flex-shrink: 0;
   border-radius: 25px;
   background: rgba(217, 217, 217, 0.15);
@@ -47,11 +49,11 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
+  font-size: 50px;
 }
 
 .UserInfo > p {
-  width: 550px;
+  width: 900px;
   height: 124px;
   flex-shrink: 0;
   border-radius: 25px;
@@ -59,23 +61,36 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
+  font-size: 30px;
   padding: 0.5rem;
 }
 
-h1 {
-  margin-top: 3rem;
+.firstTitle {
   margin: 0.5rem;
-  margin-left: 23%;
+  margin-left: 20%;
+  font-size: 50px;
+}
+
+.secondTitle {
+  margin: 0.5rem;
+  margin-left: 20%;
+  font-size: 50px;
 }
 
 #topFour {
   flex-direction: row-reverse;
-  margin-left: 23%;
+  margin-left: 20%;
   margin-bottom: -4%;
 }
 
-.favMovies {
+#topFour > img {
+  width: 300px;
+  height: 500px;
+  border-radius: 25px;
+  margin-right: 0.5rem;
+}
+
+div.Profile > .favMovies {
   width: 213px;
   height: 288px;
   flex-shrink: 0;
@@ -86,11 +101,20 @@ h1 {
 }
 
 #LastMovies {
+  margin-top: rem;
   flex-direction: row-reverse;
-  margin-left: 23%;
+  margin-left: 20%;
+  margin-top: 5%;
 }
 
-.NewMovies {
+#LastMovies > img {
+  width: 300px;
+  height: 500px;
+  border-radius: 25px;
+  margin-right: 0.5rem;
+}
+
+div.Profile > .NewMovies {
   width: 213px;
   height: 288px;
   flex-shrink: 0;
@@ -98,4 +122,20 @@ h1 {
   border: 1px solid #000;
   background: url(<path-to-image>) lightgray 50% / cover no-repeat;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.dataMovies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 700px;
+}
+
+.WatchlistMovies {
+}
+
+.dataMovies h2 {
+  margin: 0.5rem;
+  margin-left: 20%;
+  font-size: 50px;
 }

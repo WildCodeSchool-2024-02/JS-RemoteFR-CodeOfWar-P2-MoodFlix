@@ -2,10 +2,11 @@ import Navbar from "../../components/Navbar";
 import "../../styles/profileCard.css";
 import FavoriteMovies from "./FavoriteMovies";
 import RecentActivities from "./RecentActivities";
+import UserData from "./UserData";
 
 function Profile() {
   return (
-    <div>
+    <div className="Profile">
       <Navbar />
       <section>
         <div className="UserInfo">
@@ -24,6 +25,7 @@ function Profile() {
           </p>
         </div>
         <FavoriteMovies />
+        <UserData />
         <RecentActivities />
       </section>
     </div>

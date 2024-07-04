@@ -1,7 +1,7 @@
 function FavoriteMovies() {
   return (
     <section>
-      <h1>Favorite Movies</h1>
+      <h1 className="firstTitle">Favorite Movies</h1>
       <div id="topFour">
         <img
           className="favMovies"
