@@ -9,18 +9,16 @@ import fetchFilm, { fetchCrew, fetchImage } from "./utils/fetchFilm";
 
 function loaderFilm({ params }) {
   const { id } = params;
-  return Promise.all([
-    fetchFilm(id),
-    fetchCrew(id),
-    fetchImage(id),
-  ]).then(responses => {
-    const [responseFilm, responseCrew, responseImage] = responses;
-    return {
-      film: responseFilm,
-      crew: responseCrew,
-      image: responseImage,
+  return Promise.all([fetchFilm(id), fetchCrew(id), fetchImage(id)]).then(
+    (responses) => {
+      const [responseFilm, responseCrew, responseImage] = responses;
+      return {
+        film: responseFilm,
+        crew: responseCrew,
+        image: responseImage,
+      };
     }
-  })
+  );
 }
 
 const router = createBrowserRouter([
@@ -58,4 +56,3 @@ root.render(
     <RouterProvider router={router} />
   </React.StrictMode>
 );
-

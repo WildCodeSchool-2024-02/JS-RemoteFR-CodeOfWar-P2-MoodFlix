@@ -1,0 +1,35 @@
+.detail {
+  height: 30rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(31, 18, 43, 0.5);
+  box-shadow: 0 8px 32px 0 #1f26875e;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  z-index: 2;
+  margin-top: 15%;
+  padding-bottom: 2rem;
+  font-size: 32px;
+}
+
+h1 {
+  font-size: 32px;
+  margin: 0.5rem;
+}
+.poster {
+  width: 213px;
+  height: 320px;
+  margin: 1rem;
+}
+
+.logo {
+  height: 3rem;
+}
+
+.middlePart {
+  display: flex;
+  flex-direction: column;
+}

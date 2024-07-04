@@ -1,70 +1,19 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-.site-navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5rem 1rem;
+.secondPart {
   z-index: 2;
   position: relative;
-}
-
-.user-actions {
+  padding: 1rem;
+  background: linear-gradient(288deg, #18122b 74.98%, #393053 98.04%);
   display: flex;
-  align-items: center;
-  gap: 2rem;
+  gap: 3rem;
+  font-size: 24px;
 }
 
-.people {
-  width: 1.8rem;
-}
-
-.user-buttons {
+.tagline {
+  z-index: 2;
+  position: absolute;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-
-  padding: 0.5rem 1rem;
-  font-size: 1.25rem;
-  font-weight: 400;
-
-  background-color: #3a3053;
-  color: rgb(243, 236, 236);
-
-  border: none;
-  border-radius: 0.5rem;
-  cursor: pointer;
-}
-
-.user-buttons:hover {
-  box-shadow: 0 0 20px;
-}
-
-.sign-up {
-  gap: 0.5rem;
-}
-
-.login {
-  gap: 0.7rem;
-  border-radius: 0.5rem;
-  background-color: var(--secondary-black, #443c68);
-  box-shadow: 0px 0px 16.8px 0px var(--thrid-black, #635986);
-}
-
-nav.site-navbar {
-  padding: 2.4rem 3rem;
-}
-
-nav.site-navbar > h1 {
-  font-size: 2.5rem;
-  font-weight: 400;
-}
-
-.site-title {
+  width: 100%;
+  font-size: 24;
   text-shadow:
     rgba(31, 38, 135, 0.37) 4px 0px 0px,
     rgba(31, 38, 135, 0.37) 3.87565px 0.989616px 0px,
@@ -92,4 +41,23 @@ nav.site-navbar > h1 {
     rgba(31, 38, 135, 0.37) 3.44477px -2.03312px 0px,
     rgba(31, 38, 135, 0.37) 3.84068px -1.11766px 0px,
     rgba(31, 38, 135, 0.37) 3.9978px -0.132717px 0px;
+}
+
+.secondPart > section.synopsis {
+  flex: 2;
+  padding: 1rem;
+}
+
+.secondPart > section.actor {
+  flex: 1;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: fit-content;
+  justify-content: center;
+}
+
+span {
+  font-size: 16px;
 }
