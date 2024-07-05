@@ -1,9 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App";
+
+// page components
+
+import Profile from "./pages/profile/Profile";
+
+// page styles
+
+import "./styles/profileCard.css";
+
+// router creation
+
+import Login from "./pages/login/Login";
+import SignUp from "./pages/sign-up/SignUp";
 import getMoviesByMood from "./services/getMoviesByMood";
 import Tag from "./pages/tag/Tag";
 
@@ -14,11 +26,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/login",
-    element: <App />,
+    element: <Login />,
   },
   {
     path: "/signup",
-    element: <App />,
+    element: <SignUp />,
   },
   {
     path: "/film/:id",
@@ -26,7 +38,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/profile",
-    element: <App />,
+    element: <Profile />,
   },
   {
     path: "/mood/:mood",
