@@ -1,0 +1,46 @@
+main.tag {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 90%;
+  margin: auto;
+}
+
+main.tag > h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+}
+
+main.tag > h1 > span {
+  text-decoration: underline;
+}
+
+main.tag > h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-left: 3rem;
+  margin-bottom: 4rem;
+}
+
+main.tag > section > a {
+  text-decoration: none;
+}
+
+main.tag > section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 5rem;
+  row-gap: 2rem;
+}
+
+main.tag > section > button {
+  border: none;
+  background-color: transparent;
+}
+
+main.tag > section > a > img {
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
