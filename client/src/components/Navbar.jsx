@@ -7,6 +7,7 @@ export default function Navbar() {
   return (
     <nav className="site-navbar">
       <h1 className="site-title">🎥 MoodFlix</h1>
+
       <div className="user-actions">
         <Link to="/SignUp">
           <button type="button" className="user-buttons sign-up">
