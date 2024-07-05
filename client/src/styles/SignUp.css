@@ -30,8 +30,22 @@
   margin-left: 0.2rem;
 }
 
+.username-container {
+  display: flex;
+}
+
+.name-container {
+  width: 10.5rem;
+}
+
+#name,
+#username {
+  width: 10rem;
+  margin-top: 0.7rem;
+}
+
 .sign-up-form-container input {
-  width: 20rem;
+  width: 20.5rem;
   height: 2rem;
 
   background-color: #635986;
