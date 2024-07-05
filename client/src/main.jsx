@@ -9,7 +9,6 @@ import SignUp from "./pages/sign-up/SignUp";
 import getMoviesByMood from "./services/getMoviesByMood";
 import Tag from "./pages/tag/Tag";
 
-
 const router = createBrowserRouter([
   {
     path: "/",
