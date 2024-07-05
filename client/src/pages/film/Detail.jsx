@@ -6,7 +6,17 @@ import "../../styles/film/Detail.css";
 
 export default function Detail({ film }) {
   const { crew } = useLoaderData();
-  console.info(film);
+
+  const duration = film.runtime;
+  const durationHour = Math.floor(duration / 60);
+  const durationMin = duration % 60;
+  console.info (durationHour, durationMin)
+
+  const date = film.release_date;
+  const [year, month, day] = date.split('-');
+  const dateRealease = `${day}-${month}-${year}`
+
+
   const writers = crew.crew.filter(
     (crewMembers) =>
       crewMembers.job === "Screenplay" || crewMembers.job === "Writer"
@@ -17,6 +27,8 @@ export default function Detail({ film }) {
   const directors = crew.crew.filter(
     (crewMembers) => crewMembers.job === "Director"
   );
+
+  
   return (
     <section className="detail">
       <div className="leftPart">
@@ -29,8 +41,8 @@ export default function Detail({ film }) {
       </div>
       <div className="MiddlePart">
         <p>
-          {film.runtime}
-          <span>min</span>
+          {durationHour}<span>h</span>
+          {durationMin}<span>min</span>
         </p>
         <div className="crew">
           <span>Film de </span>
@@ -53,7 +65,7 @@ export default function Detail({ film }) {
         ))}
       </div>
       <div className="rightPart">
-        <p>{film.release_date}</p>
+        <p>{dateRealease}</p>
         {film.production_companies.map((companie) => (
           <div key={companie.id}>
             <p> {companie.name} </p>
