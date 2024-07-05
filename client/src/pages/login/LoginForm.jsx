@@ -22,10 +22,16 @@ function LoginForm() {
           </div>
 
           <div className="forgot-password">
-            <Link to="/forgot">FORGOT PASSWORD?</Link>
+            <Link to="/forgot">
+              <p>FORGOT PASSWORD?</p>
+            </Link>
           </div>
         </div>
-        <button type="submit">LOGIN</button>
+        <div className="login-button-container">
+          <button className="login-button" type="submit">
+            LOGIN
+          </button>
+        </div>
       </form>
     </div>
   );

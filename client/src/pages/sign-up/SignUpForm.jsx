@@ -5,19 +5,16 @@ function SignUpForm() {
     <div className="sign-up-form-container">
       <h2>JOIN US 🤝</h2>
       <div className="already-container">
-        <p>Already a member?</p>
-        <Link to="/Login">LOGIN</Link>
+        <p>ALREADY A MEMBER?</p>
+        <Link to="/Login">
+          <p className="colorful-login">LOGIN</p>
+        </Link>
       </div>
       <form action="#">
         <label htmlFor="username" name="username">
           USERNAME
         </label>
         <input type="username" id="username" />
-
-        <label htmlFor="name" name="name">
-          NAME
-        </label>
-        <input type="name" id="name" />
 
         <label htmlFor="email" name="email">
           EMAIL
@@ -29,12 +26,16 @@ function SignUpForm() {
         </label>
         <input type="password" id="password" />
 
-        <label htmlFor="confirmation" name="confirmation">
+        <label htmlFor="confirm-password" name="password">
           CONFIRM YOUR PASSWORD
         </label>
-        <input type="confirmation" id="confirmation" />
+        <input type="password" id="confirm-password" />
 
-        <button type="submit">SIGN UP</button>
+        <div className="signup-button-container">
+          <button className="signup-button" type="submit">
+            SIGN UP
+          </button>
+        </div>
       </form>
     </div>
   );

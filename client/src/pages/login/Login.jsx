@@ -15,7 +15,10 @@ function Login() {
             <LoginForm />
           </div>
           <div className="login-img">
-            <img src={LoginImage} alt="Discussion scene between the main characters in the film The Social Network" />
+            <img
+              src={LoginImage}
+              alt="Discussion scene between the main characters in the film The Social Network"
+            />
           </div>
         </div>
       </div>

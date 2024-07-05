@@ -8,10 +8,12 @@ export default function Navbar() {
     <nav className="site-navbar">
       <h1 className="site-title">🎥 MoodFlix</h1>
       <div className="user-actions">
-        <button type="button" className="user-buttons sign-up">
-          <img className="svg person" alt="sign in button" src={SvgPerson} />
-          <p>Sign Up</p>
-        </button>
+        <Link to="/SignUp">
+          <button type="button" className="user-buttons sign-up">
+            <img className="svg person" alt="sign in button" src={SvgPerson} />
+            <p>Sign Up</p>
+          </button>
+        </Link>
         <Link to="/Login">
           <button type="button" className="user-buttons login">
             <img className="svg people" alt="login button" src={SvgPeople} />
