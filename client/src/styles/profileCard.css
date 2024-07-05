@@ -1,4 +1,16 @@
-div.Profile > section {
+<<<<<<< HEAD * {
+  font-family: "Fira Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+
+/* User information */
+
+=======>>>>>>>0f856e175e16f74e90199b73af18e3be1d1058d div.Profile > section {
   margin: 4rem auto;
 }
 
@@ -24,6 +36,7 @@ div.Profile > section {
   border-radius: 25px;
   background: rgba(217, 217, 217, 0.15);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 50px;
@@ -37,6 +50,7 @@ div.Profile > section {
   background: rgba(217, 217, 217, 0.15);
   color: var(--primary-font-color, #fff);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 50px;
@@ -55,13 +69,9 @@ div.Profile > section {
   padding: 0.5rem;
 }
 
-.firstTitle {
-  margin: 0.5rem;
-  margin-left: 20%;
-  font-size: 50px;
-}
+/* Favorite movies */
 
-.secondTitle {
+.firstTitle {
   margin: 0.5rem;
   margin-left: 20%;
   font-size: 50px;
@@ -77,17 +87,25 @@ div.Profile > section {
   width: 300px;
   height: 500px;
   border-radius: 25px;
-  margin-right: 0.5rem;
+  margin-right: 1.5rem;
 }
 
 div.Profile > .favMovies {
-  width: 213px;
-  height: 288px;
-  flex-shrink: 0;
+  width: 260px;
+  height: 300px;
   border-radius: 25px;
   border: 1px solid #000;
   background: url(<path-to-image>) lightgray 50% / cover no-repeat;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* Recent activities */
+
+.secondTitle {
+  margin: 0.5rem;
+  margin-left: 20%;
+  font-size: 50px;
+  margin-top: -5%;
 }
 
 #LastMovies {
@@ -101,7 +119,8 @@ div.Profile > .favMovies {
   width: 300px;
   height: 500px;
   border-radius: 25px;
-  margin-right: 0.5rem;
+  margin-right: 1.5rem;
+  margin-top: -199px;
 }
 
 div.Profile > .NewMovies {
@@ -114,6 +133,15 @@ div.Profile > .NewMovies {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+/* Movies data */
+
+#inline {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-top: -600px;
+}
+
 .dataMovies {
   display: flex;
   flex-direction: column;
@@ -123,6 +151,7 @@ div.Profile > .NewMovies {
 
 .WatchlistMovies {
   font-size: 50px;
+  align-items: left;
 }
 
 .WatchlistMovies > p {
@@ -139,10 +168,11 @@ div.Profile > .NewMovies {
 }
 
 .listMovies {
+  margin-top: 10px;
   font-size: 50px;
 }
 
-.listMovies > p {
+.listMovies > a {
   width: 900px;
   height: 124px;
   flex-shrink: 0;
@@ -153,10 +183,12 @@ div.Profile > .NewMovies {
   align-items: center;
   font-size: 30px;
   padding: 0.5rem;
+  color: white;
 }
 
 .tagMovies {
   font-size: 50px;
+  margin-top: 10px;
 }
 
 .tagMovies > p {
@@ -174,6 +206,7 @@ div.Profile > .NewMovies {
 
 .friends {
   font-size: 50px;
+  margin-top: 10px;
 }
 
 .friends > p {
