@@ -10,7 +10,6 @@ export default function Detail({ film }) {
   const duration = film.runtime;
   const durationHour = Math.floor(duration / 60);
   const durationMin = duration % 60;
-  console.info (durationHour, durationMin)
 
   const date = film.release_date;
   const [year, month, day] = date.split('-');
@@ -41,8 +40,8 @@ export default function Detail({ film }) {
       </div>
       <div className="MiddlePart">
         <p>
-          {durationHour}<span>h</span>
-          {durationMin}<span>min</span>
+        {durationHour !== 0 ? `${durationHour}h ` : ''}
+        {durationMin !== 0 ? `${durationMin}min` : ''}
         </p>
         <div className="crew">
           <span>Film de </span>
