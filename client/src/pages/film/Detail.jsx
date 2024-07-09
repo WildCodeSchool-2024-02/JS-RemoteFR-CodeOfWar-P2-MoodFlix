@@ -10,12 +10,11 @@ export default function Detail({ film }) {
   const duration = film.runtime;
   const durationHour = Math.floor(duration / 60);
   const durationMin = duration % 60;
-  console.info (durationHour, durationMin)
+  console.info(durationHour, durationMin);
 
   const date = film.release_date;
-  const [year, month, day] = date.split('-');
-  const dateRealease = `${day}-${month}-${year}`
-
+  const [year, month, day] = date.split("-");
+  const dateRealease = `${day}-${month}-${year}`;
 
   const writers = crew.crew.filter(
     (crewMembers) =>
@@ -28,7 +27,6 @@ export default function Detail({ film }) {
     (crewMembers) => crewMembers.job === "Director"
   );
 
-  
   return (
     <section className="detail">
       <div className="leftPart">
@@ -41,8 +39,10 @@ export default function Detail({ film }) {
       </div>
       <div className="MiddlePart">
         <p>
-          {durationHour}<span>h</span>
-          {durationMin}<span>min</span>
+          {durationHour}
+          <span>h</span>
+          {durationMin}
+          <span>min</span>
         </p>
         <div className="crew">
           <span>Film de </span>
