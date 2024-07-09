@@ -4,7 +4,7 @@
 
   font-size: 2rem;
 
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
   margin-left: 6rem;
 }
 
@@ -55,6 +55,40 @@
   border-radius: 0.4rem;
 }
 
+.show-password-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.show-password-img {
+  width: 1.3rem;
+  margin-left: 18.5rem;
+  margin-top: 0.2rem;
+  position: absolute;
+}
+
+.hide-password-img {
+  display: none;
+  width: 1.3rem;
+  margin-left: 18.5rem;
+  margin-top: 0.2rem;
+  position: absolute;
+}
+
+.show-password-img img {
+  width: 1.3rem;
+}
+
+.hide-password-img img {
+  width: 1.3rem;
+}
+
+#confirm-password,
+#password {
+  padding-right: 2.5rem;
+}
+
 /* BUTTON-SIGNUP */
 
 .signup-button-container {
@@ -65,7 +99,8 @@
 .signup-button {
   width: 10rem;
   height: 2rem;
-  margin-top: 0.7rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.7rem;
 
   background-color: #635986;
   color: rgb(243, 236, 236);
