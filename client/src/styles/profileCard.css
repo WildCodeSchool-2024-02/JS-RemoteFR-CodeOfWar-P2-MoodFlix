@@ -1,0 +1,229 @@
+<<<<<<< HEAD * {
+  font-family: "Fira Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+
+/* User information */
+
+=======>>>>>>>0f856e175e16f74e90199b73af18e3be1d1058d div.Profile > section {
+  margin: 4rem auto;
+}
+
+.UserInfo {
+  display: flex;
+  justify-content: left;
+  margin-left: 20%;
+  gap: 2rem;
+}
+
+.UserInfo > .icon {
+  width: 300px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 150px;
+  margin-bottom: 3rem;
+}
+
+.UserInfo > .pseudo {
+  width: 500px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  background: rgba(217, 217, 217, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+.UserInfo > .link {
+  width: 500px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  background: rgba(217, 217, 217, 0.15);
+  color: var(--primary-font-color, #fff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+.UserInfo > p {
+  width: 900px;
+  height: 124px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  background: rgba(217, 217, 217, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  padding: 0.5rem;
+}
+
+/* Favorite movies */
+
+.firstTitle {
+  margin: 0.5rem;
+  margin-left: 20%;
+  font-size: 50px;
+}
+
+#topFour {
+  flex-direction: row-reverse;
+  margin-left: 20%;
+  margin-bottom: -4%;
+}
+
+#topFour > img {
+  width: 300px;
+  height: 500px;
+  border-radius: 25px;
+  margin-right: 1.5rem;
+}
+
+div.Profile > .favMovies {
+  width: 260px;
+  height: 300px;
+  border-radius: 25px;
+  border: 1px solid #000;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* Recent activities */
+
+.secondTitle {
+  margin: 0.5rem;
+  margin-left: 20%;
+  font-size: 50px;
+  margin-top: -5%;
+}
+
+#LastMovies {
+  margin-top: rem;
+  flex-direction: row-reverse;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+
+#LastMovies > img {
+  width: 300px;
+  height: 500px;
+  border-radius: 25px;
+  margin-right: 1.5rem;
+  margin-top: -199px;
+}
+
+div.Profile > .NewMovies {
+  width: 213px;
+  height: 288px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  border: 1px solid #000;
+  background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* Movies data */
+
+#inline {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-top: -600px;
+}
+
+.dataMovies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 700px;
+}
+
+.WatchlistMovies {
+  font-size: 50px;
+  align-items: left;
+}
+
+.WatchlistMovies > p {
+  width: 900px;
+  height: 124px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  background: rgba(217, 217, 217, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  padding: 0.5rem;
+}
+
+.listMovies {
+  margin-top: 10px;
+  font-size: 50px;
+}
+
+.listMovies > a {
+  width: 900px;
+  height: 124px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  background: rgba(217, 217, 217, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  padding: 0.5rem;
+  color: white;
+}
+
+.tagMovies {
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+.tagMovies > p {
+  width: 900px;
+  height: 124px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  background: rgba(217, 217, 217, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  padding: 0.5rem;
+}
+
+.friends {
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+.friends > p {
+  width: 900px;
+  height: 124px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  background: rgba(217, 217, 217, 0.15);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  padding: 0.5rem;
+}
+
+.dataMovies h2 {
+  margin: 0.5rem;
+  margin-left: 20%;
+  font-size: 50px;
+}
