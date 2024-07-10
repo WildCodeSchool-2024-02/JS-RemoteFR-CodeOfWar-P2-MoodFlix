@@ -57,6 +57,8 @@
   border-radius: 0.4rem;
 }
 
+/* PASSWORD */
+
 .show-password-container {
   display: flex;
   align-items: center;
@@ -76,11 +78,13 @@
 }
 
 .hide-password-img {
-  display: none;
   width: 1.3rem;
+
   margin-left: 18.5rem;
   margin-top: 0.2rem;
+
   position: absolute;
+  display: none;
 }
 
 .show-password-img img {
