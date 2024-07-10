@@ -12,9 +12,8 @@ export default function Detail({ film }) {
   const durationMin = duration % 60;
 
   const date = film.release_date;
-  const [year, month, day] = date.split('-');
-  const dateRealease = `${day}-${month}-${year}`
-
+  const [year, month, day] = date.split("-");
+  const dateRealease = `${day}-${month}-${year}`;
 
   const writers = crew.crew.filter(
     (crewMembers) =>
@@ -27,7 +26,6 @@ export default function Detail({ film }) {
     (crewMembers) => crewMembers.job === "Director"
   );
 
-  
   return (
     <section className="detail">
       <div className="leftPart">
