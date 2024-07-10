@@ -1,24 +1,7 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
-import eyeOpened from "../../assets/images/visibility.png";
-import eyeClosed from "../../assets/images/visibility_off.png";
+import PasswordBoxs from "./PasswordBoxs";
 
 function SignUpForm() {
-    const [password, setPassword] = useState();
-    const [confirmPassword, setConfirmPassword] = useState();
-    const [visible, setVisible] = useState(false);
-
-    const handlePassword = (event) => {
-        setPassword(event.target.value);
-    };
-
-    const handleConfirmPassword = (event) => {
-        setConfirmPassword(event.target.value);
-    };
-
-    const toggleVisibility = () => {
-        setVisible(!visible);
-    };
 
     return (
         <div className="sign-up-form-container">
@@ -48,8 +31,8 @@ function SignUpForm() {
                     EMAIL
                 </label>
                 <input type="email" id="email" />
-
-                <label htmlFor="password" name="password">
+                <PasswordBoxs />
+                {/* <label htmlFor="password" name="password">
                     PASSWORD
                 </label>
                 <div className="show-password-container">
@@ -61,12 +44,9 @@ function SignUpForm() {
                     />
 
                     <button type="button" className="show-password-img" onClick={toggleVisibility}>
-                        <img src={visible ? eyeClosed : eyeOpened} alt="coucou" />
+                        <img src={visible ? eyeClosed : eyeOpened} alt={visible ? "closed eye" : "opened eye"} />
                     </button>
 
-                    <div className="hide-password-img">
-                        <img src={eyeClosed} alt="closed eye" />
-                    </div>
                 </div>
 
                 <label htmlFor="confirm-password" name="password">
@@ -89,7 +69,7 @@ function SignUpForm() {
                 </div>
                 {password && confirmPassword && password !== confirmPassword ? (
                     <p>INVALID PASSWORD ❌</p>
-                ) : null}
+                ) : null} */}
                 <div className="signup-button-container">
                     <button className="signup-button" type="submit">
                         SIGN UP
