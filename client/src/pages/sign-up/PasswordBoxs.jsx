@@ -1,11 +1,12 @@
 import { useState } from "react";
-import eyeOpened from "../../assets/images/visibility.png";
-import eyeClosed from "../../assets/images/visibility_off.png";
+import openedEye from "../../assets/images/visibility.png";
+import closedEye from "../../assets/images/visibility_off.png";
 
 function PasswordBoxs() {
   const [password, setPassword] = useState();
   const [confirmPassword, setConfirmPassword] = useState();
   const [visible, setVisible] = useState(false);
+  const [confirmVisible, setConfirmVisible] = useState(false);
 
   const handlePassword = (event) => {
     setPassword(event.target.value);
@@ -17,6 +18,10 @@ function PasswordBoxs() {
 
   const toggleVisibility = () => {
     setVisible(!visible);
+  };
+
+  const toggleConfirmVisibility = () => {
+    setConfirmVisible(!confirmVisible);
   };
 
   return (
@@ -38,8 +43,8 @@ function PasswordBoxs() {
           onClick={toggleVisibility}
         >
           <img
-            src={visible ? eyeClosed : eyeOpened}
-            alt={visible ? "closed eye" : "opened eye"}
+            src={visible ? closedEye : openedEye}
+            alt={visible ? "Closed eye" : "Opened eye"}
           />
         </button>
       </div>
@@ -49,18 +54,21 @@ function PasswordBoxs() {
       </label>
       <div className="show-password-container">
         <input
-          type="password"
+          type={confirmVisible ? "text" : "password"}
           id="confirm-password"
           value={confirmPassword}
           onChange={handleConfirmPassword}
         />
-        <div className="show-password-img">
-          <img src={eyeOpened} alt="opened eye" />
-        </div>
-
-        <div className="hide-password-img">
-          <img src={eyeClosed} alt="closed eye" />
-        </div>
+        <button
+          type="button"
+          className="show-password-img"
+          onClick={toggleConfirmVisibility}
+        >
+          <img
+            src={confirmVisible ? closedEye : openedEye}
+            alt={confirmVisible ? "Closed eye" : "Opened eye"}
+          />
+        </button>
       </div>
       {password && confirmPassword && password !== confirmPassword ? (
         <p>INVALID PASSWORD ❌</p>

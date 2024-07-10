@@ -58,7 +58,10 @@
   width: 20rem;
   height: 2rem;
 
+  padding-left: 0.4rem;
+
   background-color: #635986;
+  font-size: 1.2rem;
 
   border: none;
   border-radius: 0.4rem;
