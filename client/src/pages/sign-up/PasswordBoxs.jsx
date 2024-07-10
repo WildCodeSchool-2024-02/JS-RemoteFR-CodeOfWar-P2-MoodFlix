@@ -27,7 +27,7 @@ function PasswordBoxs() {
   return (
     <>
       <label htmlFor="password" name="password">
-        PASSWORD
+        MOT DE PASSE
       </label>
       <div className="show-password-container">
         <input
@@ -50,7 +50,7 @@ function PasswordBoxs() {
       </div>
 
       <label htmlFor="confirm-password" name="password">
-        CONFIRM YOUR PASSWORD
+        CONFIRMEZ VOTRE MOT DE PASSE
       </label>
       <div className="show-password-container">
         <input
@@ -71,7 +71,7 @@ function PasswordBoxs() {
         </button>
       </div>
       {password && confirmPassword && password !== confirmPassword ? (
-        <p>INVALID PASSWORD ❌</p>
+        <p>MOT DE PASSE INCORRECT ❌</p>
       ) : null}
     </>
   );

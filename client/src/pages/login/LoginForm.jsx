@@ -3,33 +3,33 @@ import { Link } from "react-router-dom";
 function LoginForm() {
   return (
     <div className="login-form-container">
-      <h2>WELCOME BACK👋</h2>
+      <h2>BON RETOUR👋</h2>
       <form action="#">
         <label htmlFor="email" name="email">
-          MAIL ADDRESS
+          ADRESSE E-MAIL
         </label>
         <input type="email" id="email" />
 
         <label htmlFor="password" name="password">
-          PASSWORD
+          MOT DE PASSE
         </label>
         <input type="password" id="password" />
 
         <div className="options-container">
           <div className="checkbox-container">
             <input type="checkbox" name="checkbox" id="checkbox" />
-            <label htmlFor="checkbox">REMEMBER ME</label>
+            <label htmlFor="checkbox">SE SOUVENIR DE MOI</label>
           </div>
 
           <div className="forgot-password">
             <Link to="/forgot">
-              <p>FORGOT PASSWORD?</p>
+              <p>MOT DE PASSE OUBLIÉ ?</p>
             </Link>
           </div>
         </div>
         <div className="login-button-container">
           <button className="login-button" type="submit">
-            LOGIN
+            SE CONNECTER
           </button>
         </div>
       </form>

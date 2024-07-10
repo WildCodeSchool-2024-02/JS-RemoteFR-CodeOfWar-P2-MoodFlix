@@ -13,7 +13,7 @@
 .sign-up-form-container form {
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
+  gap: 0.6rem;
 
   margin-left: 5rem;
 }
@@ -65,8 +65,13 @@
 
 .show-password-img {
   width: 1.3rem;
+
+  background-color: #635986;
+  border: none;
+
   margin-left: 18.5rem;
   margin-top: 0.2rem;
+
   position: absolute;
 }
 
@@ -101,14 +106,17 @@
 .signup-button {
   width: 10rem;
   height: 2rem;
-  margin-top: 0.4rem;
+
+  margin-top: 0.6rem;
   margin-bottom: 0.7rem;
 
   background-color: #635986;
   color: rgb(243, 236, 236);
+  font-weight: bold;
 
   border: none;
   border-radius: 0.4rem;
+
   cursor: pointer;
   text-decoration: none;
 }
