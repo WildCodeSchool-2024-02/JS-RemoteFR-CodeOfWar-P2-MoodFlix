@@ -32,44 +32,6 @@ function SignUpForm() {
                 </label>
                 <input type="email" id="email" />
                 <PasswordBoxs />
-                {/* <label htmlFor="password" name="password">
-                    PASSWORD
-                </label>
-                <div className="show-password-container">
-                    <input
-                        type={visible ? "text" : "password"}
-                        id="password"
-                        value={password}
-                        onChange={handlePassword}
-                    />
-
-                    <button type="button" className="show-password-img" onClick={toggleVisibility}>
-                        <img src={visible ? eyeClosed : eyeOpened} alt={visible ? "closed eye" : "opened eye"} />
-                    </button>
-
-                </div>
-
-                <label htmlFor="confirm-password" name="password">
-                    CONFIRM YOUR PASSWORD
-                </label>
-                <div className="show-password-container">
-                    <input
-                        type="password"
-                        id="confirm-password"
-                        value={confirmPassword}
-                        onChange={handleConfirmPassword}
-                    />
-                    <div className="show-password-img">
-                        <img src={eyeOpened} alt="opened eye" />
-                    </div>
-
-                    <div className="hide-password-img">
-                        <img src={eyeClosed} alt="closed eye" />
-                    </div>
-                </div>
-                {password && confirmPassword && password !== confirmPassword ? (
-                    <p>INVALID PASSWORD ❌</p>
-                ) : null} */}
                 <div className="signup-button-container">
                     <button className="signup-button" type="submit">
                         SIGN UP
