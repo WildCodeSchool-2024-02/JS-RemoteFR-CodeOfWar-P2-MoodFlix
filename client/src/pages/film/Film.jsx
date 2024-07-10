@@ -8,6 +8,7 @@ import "../../styles/film/film.css";
 
 function Film() {
   const { film } = useLoaderData();
+  console.info(film);
   return (
     <main className="film">
       <Navbar />
@@ -15,6 +16,7 @@ function Film() {
         <h2>{film.tagline}</h2>
       </div>
       <Image />
+
       <Detail film={film} />
       <section className="secondPart">
         <Synopsis />

@@ -1,0 +1,14 @@
+.circular-progress {
+  z-index: 2;
+  position: absolute;
+  margin-top: 1.2rem;
+}
+
+svg > text {
+  font-size: 1.5rem;
+  fill: white;
+}
+
+svg > text > tspan {
+  font-weight: bold;
+}

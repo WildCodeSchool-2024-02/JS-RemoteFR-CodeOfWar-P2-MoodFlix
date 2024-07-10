@@ -3,6 +3,7 @@ import { useLoaderData } from "react-router-dom";
 
 import baseImageUrl from "../../utils/baseImageUrl";
 import "../../styles/film/Detail.css";
+import Rate from "./Rate";
 
 export default function Detail({ film }) {
   const { crew } = useLoaderData();
@@ -26,6 +27,7 @@ export default function Detail({ film }) {
           src={baseImageUrl + film.poster_path}
           alt={film.title}
         />
+        <Rate progress={film.vote_average * 10} />
       </div>
       <div className="MiddlePart">
         <p>
@@ -69,6 +71,7 @@ Detail.propTypes = {
     runtime: PropTypes.number,
     poster_path: PropTypes.string,
     release_date: PropTypes.string,
+    vote_average: PropTypes.number,
     production_companies: PropTypes.arrayOf(
       PropTypes.shape({
         name: PropTypes.string,
