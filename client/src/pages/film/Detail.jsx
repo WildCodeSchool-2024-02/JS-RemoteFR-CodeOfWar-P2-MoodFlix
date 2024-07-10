@@ -7,7 +7,6 @@ import Rate from "./Rate";
 
 export default function Detail({ film }) {
   const { crew } = useLoaderData();
-  console.info(film);
   const writers = crew.crew.filter(
     (crewMembers) =>
       crewMembers.job === "Screenplay" || crewMembers.job === "Writer"
