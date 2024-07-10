@@ -78,9 +78,9 @@
 }
 
 #topFour {
-  flex-direction: row-reverse;
   margin-left: 20%;
   margin-bottom: -4%;
+  display: flex;
 }
 
 #topFour > img {
