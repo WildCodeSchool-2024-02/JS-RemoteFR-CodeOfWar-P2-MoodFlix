@@ -1,0 +1,29 @@
+header {
+  display: flex;
+}
+
+.imgProfile {
+  width: 15rem;
+}
+
+.biographie > div {
+  display: flex;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+}
+
+.biographie > div > p {
+  display: flex;
+  flex-direction: column;
+}
+.biographie > div > p > img {
+  width: 10rem;
+}
+main.cast > section {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}

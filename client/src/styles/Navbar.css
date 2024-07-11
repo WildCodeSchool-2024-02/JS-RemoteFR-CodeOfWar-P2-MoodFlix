@@ -64,7 +64,7 @@ nav.site-navbar > h1 {
   font-weight: 400;
 }
 
-.site-title {
+nav.site-navbar:has(+ main.film) > .site-title {
   text-shadow:
     rgba(31, 38, 135, 0.37) 4px 0px 0px,
     rgba(31, 38, 135, 0.37) 3.87565px 0.989616px 0px,

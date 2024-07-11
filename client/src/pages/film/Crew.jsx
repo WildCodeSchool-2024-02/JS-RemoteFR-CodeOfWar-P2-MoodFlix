@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { useLoaderData } from "react-router-dom";
-import baseImageUrl from "../../utils/baseImageUrl";
+import { useLoaderData, Link } from "react-router-dom";
 import "../../styles/film/Crew.css";
 
 export default function Crew() {
@@ -26,13 +25,11 @@ export default function Crew() {
       <h3>Acteurs / Actrice </h3>
       <div className="actor">
         {cast.map((actor) => (
-          <div key={actor.id}>
-            <img src={baseImageUrl + actor.profile_path} alt={actor.name} />
-            <p>{actor.name}</p>
-            <p>
-              <span className="role">dans le rôle de</span> {actor.character}
-            </p>
-          </div>
+          <Link to={`/actor/${actor.id}`} key={actor.id}>
+            {" "}
+            {actor.name} <br />
+            <span className="role"> dans le role de </span> {actor.character}{" "}
+          </Link>
         ))}
       </div>
       {crew.cast.length > initialLimit && (

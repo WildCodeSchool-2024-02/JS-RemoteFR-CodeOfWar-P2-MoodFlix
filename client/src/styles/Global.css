@@ -7,3 +7,9 @@ body {
   font-family: "Fira sans";
   color: white;
 }
+
+a,
+a:link,
+a:visited {
+  color: white;
+}
