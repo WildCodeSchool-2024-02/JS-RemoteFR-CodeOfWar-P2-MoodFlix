@@ -12,13 +12,13 @@ export default function Navbar() {
         <Link to="/SignUp">
           <button type="button" className="user-buttons sign-up">
             <img className="svg person" alt="sign in button" src={SvgPerson} />
-            <p>Sign Up</p>
+            <p>S'INSCRIRE</p>
           </button>
         </Link>
         <Link to="/Login">
           <button type="button" className="user-buttons login">
             <img className="svg people" alt="login button" src={SvgPeople} />
-            Login
+            SE CONNECTER
           </button>
         </Link>
       </div>

@@ -4,7 +4,7 @@
 
   font-size: 2rem;
 
-  margin-bottom: 1rem;
+  margin-bottom: 0.7rem;
   margin-left: 6rem;
 }
 
@@ -13,7 +13,7 @@
 .sign-up-form-container form {
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
+  gap: 0.6rem;
 
   margin-left: 5rem;
 }
@@ -48,11 +48,56 @@
   width: 20.5rem;
   height: 2rem;
 
+  padding-left: 0.4rem;
+
   background-color: #635986;
   font-size: 1.2rem;
 
   border: none;
   border-radius: 0.4rem;
+}
+
+/* PASSWORD */
+
+.show-password-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.show-password-img {
+  width: 1.3rem;
+
+  background-color: #635986;
+  border: none;
+
+  margin-left: 18.5rem;
+  margin-top: 0.2rem;
+
+  position: absolute;
+}
+
+.hide-password-img {
+  width: 1.3rem;
+
+  margin-left: 18.5rem;
+  margin-top: 0.2rem;
+
+  position: absolute;
+  display: none;
+}
+
+.show-password-img img {
+  width: 1.3rem;
+}
+
+.hide-password-img img {
+  width: 1.3rem;
+}
+
+#confirm-password,
+#password {
+  padding-right: 2.5rem;
 }
 
 /* BUTTON-SIGNUP */
@@ -65,13 +110,17 @@
 .signup-button {
   width: 10rem;
   height: 2rem;
-  margin-top: 0.7rem;
+
+  margin-top: 0.6rem;
+  margin-bottom: 0.7rem;
 
   background-color: #635986;
   color: rgb(243, 236, 236);
+  font-weight: bold;
 
   border: none;
   border-radius: 0.4rem;
+
   cursor: pointer;
   text-decoration: none;
 }
