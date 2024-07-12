@@ -11,6 +11,6 @@ export default function Layout({ children, className }) {
 }
 
 Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.element.isRequired,
   className: PropTypes.string.isRequired,
 };
