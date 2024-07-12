@@ -34,7 +34,7 @@ export default function Movie({ id }) {
           alt="poster"
         />
       ) : null}
-      <p>'</p>
+      <p>&nbsp;</p>
     </>
   );
 }

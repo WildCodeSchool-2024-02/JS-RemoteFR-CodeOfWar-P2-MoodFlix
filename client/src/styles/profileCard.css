@@ -1,4 +1,4 @@
-<<<<<<< HEAD * {
+* {
   font-family: "Fira Sans";
   font-size: 32px;
   font-style: normal;
@@ -9,8 +9,7 @@
 }
 
 /* User information */
-
-=======>>>>>>>0f856e175e16f74e90199b73af18e3be1d1058d div.Profile > section {
+div.Profile > section {
   margin: 4rem auto;
 }
 
@@ -57,7 +56,7 @@
 }
 
 .UserInfo > p {
-  width: 900px;
+  width: 980px;
   height: 124px;
   flex-shrink: 0;
   border-radius: 25px;
@@ -209,7 +208,7 @@ div.Profile > .NewMovies {
   margin-top: 10px;
 }
 
-.friends > p {
+.friends > img {
   width: 900px;
   height: 124px;
   flex-shrink: 0;

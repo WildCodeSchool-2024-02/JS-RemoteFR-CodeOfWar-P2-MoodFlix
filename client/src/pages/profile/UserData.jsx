@@ -17,7 +17,7 @@ function UserData() {
       </div>
       <div className="friends">
         <h2>amis</h2>
-        <p>coming soon...</p>
+        <img className="friendList" src="https://ibb.co/PzWWxJ7/" alt="friend logo" />
       </div>
     </section>
   );
