@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import PropTypes from "prop-types"; 
+import PropTypes from "prop-types";
 import axios from "axios";
 
 export default function Movie({ id }) {
@@ -39,6 +39,6 @@ export default function Movie({ id }) {
   );
 }
 
-Movie.propTypes={
-    id:PropTypes.string.isRequired
-}
+Movie.propTypes = {
+  id: PropTypes.string.isRequired,
+};
