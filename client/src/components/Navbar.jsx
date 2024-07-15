@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
 import SvgPerson from "../assets/svg/person.svg";
 import SvgPeople from "../assets/svg/people.svg";
+import SearchBar from "./searchBar/SearchBar";
 
 export default function Navbar() {
   return (
@@ -9,6 +10,7 @@ export default function Navbar() {
       <h1 className="site-title">🎥 MoodFlix</h1>
 
       <div className="user-actions">
+        <SearchBar />
         <Link to="/SignUp">
           <button type="button" className="user-buttons sign-up">
             <img className="svg person" alt="sign in button" src={SvgPerson} />
