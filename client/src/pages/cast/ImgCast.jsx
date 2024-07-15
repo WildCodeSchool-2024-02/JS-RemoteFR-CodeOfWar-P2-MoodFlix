@@ -1,5 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import baseImageUrl from "../../utils/baseImageUrl";
+import "../../styles/cast/Cast.css";
 
 export default function ImgCast() {
   const { cast } = useLoaderData();

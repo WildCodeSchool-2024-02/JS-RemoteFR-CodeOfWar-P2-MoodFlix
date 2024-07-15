@@ -11,7 +11,6 @@ export default function Crew() {
       displayLimit === initialLimit ? crew.cast.length : initialLimit
     );
   };
-
   const filteredCast = crew.cast.filter(
     (actor) =>
       actor.profile_path &&

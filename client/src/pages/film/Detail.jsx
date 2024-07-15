@@ -40,8 +40,8 @@ export default function Detail({ film }) {
       </div>
       <div className="MiddlePart">
         <p>
-        {durationHour !== 0 ? `${durationHour}h ` : ''}
-        {durationMin !== 0 ? `${durationMin}min` : ''}
+          {durationHour !== 0 ? `${durationHour}h ` : ""}
+          {durationMin !== 0 ? `${durationMin}min` : ""}
         </p>
         <div className="crew">
           <span>Film de </span>
