@@ -111,6 +111,7 @@ export default function getMoviesByMood(mood) {
     .get("/discover/movie", {
       params: {
         with_genres: moodTable[mood]?.id || 28,
+        page: 1,
       },
     })
     .then((response) => response.data);
