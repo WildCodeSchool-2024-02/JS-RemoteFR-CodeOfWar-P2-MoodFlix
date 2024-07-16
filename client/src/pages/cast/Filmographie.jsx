@@ -35,13 +35,10 @@ export default function Filmographie() {
       {years.slice(0, visibleCount).map((year) => (
         <div key={year}>
           <u>{year || "Prochainement"}</u>
-          {filmsSorted[year].map((film) => (
-            <LineFilm
-              key={film.id}
-              title={film.title}
-              character={film.character}
-            />
-          ))}
+          {filmsSorted &&
+            filmsSorted[year].map((film) => (
+              <LineFilm key={film.id} film={film} />
+            ))}
           <hr />
         </div>
       ))}
