@@ -131,15 +131,14 @@
 @media (max-width: 480px) {
   .login-container {
     flex-direction: column-reverse;
-    width: 100%;
+    width: 90%;
     height: auto;
-    margin: 2rem 1rem;
+    margin: 1rem auto;
+    border-radius: 1rem;
   }
 
   .login-img img {
-    /* display: none; */
-    border-bottom-right-radius: 0;
-    border-top-left-radius: 2rem;
+    border-radius: 1rem 1rem 0 0;
   }
 
   .form-container {
@@ -147,7 +146,9 @@
   }
 
   .login-form-container h2 {
+    margin-top: 0.5rem;
     margin-left: 0;
+
     font-size: 1.5rem;
   }
 

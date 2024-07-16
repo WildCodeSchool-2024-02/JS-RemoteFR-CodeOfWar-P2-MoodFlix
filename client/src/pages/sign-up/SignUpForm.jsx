@@ -3,7 +3,7 @@ import PasswordBoxs from "./PasswordBoxs";
 
 function SignUpForm() {
   return (
-    <div className="sign-up-form-container">
+    <div className="new-user-form-container">
       <h2>REJOIGNEZ-NOUS 🤝</h2>
       <div className="already-container">
         <p>DÉJÀ MEMBRE ?</p>

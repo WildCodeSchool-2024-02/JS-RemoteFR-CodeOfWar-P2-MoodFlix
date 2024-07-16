@@ -25,12 +25,12 @@ function SignUp() {
       <div>
         <Navbar />
       </div>
-      <div className="global-container">
-        <div className="login-container">
-          <div className="form-container">
+      <div className="global-signup-container">
+        <div className="signup-container">
+          <div className="signup-form-container">
             <SignUpForm />
           </div>
-          <div className="login-img">
+          <div className="signup-img">
             {response ? (
               <img
                 src={`https://image.tmdb.org/t/p/original${response.backdrops[14].file_path}`}
