@@ -3,6 +3,7 @@ import { useLoaderData } from "react-router-dom";
 
 import baseImageUrl from "../../utils/baseImageUrl";
 import "../../styles/film/Detail.css";
+import Rate from "./Rate";
 
 export default function Detail({ film }) {
   const { crew } = useLoaderData();
@@ -10,7 +11,6 @@ export default function Detail({ film }) {
   const duration = film.runtime;
   const durationHour = Math.floor(duration / 60);
   const durationMin = duration % 60;
-  console.info(durationHour, durationMin);
 
   const date = film.release_date;
   const [year, month, day] = date.split("-");
@@ -36,13 +36,12 @@ export default function Detail({ film }) {
           src={baseImageUrl + film.poster_path}
           alt={film.title}
         />
+        <Rate progress={film.vote_average * 10} />
       </div>
       <div className="MiddlePart">
         <p>
-          {durationHour}
-          <span>h</span>
-          {durationMin}
-          <span>min</span>
+          {durationHour !== 0 ? `${durationHour}h ` : ""}
+          {durationMin !== 0 ? `${durationMin}min` : ""}
         </p>
         <div className="crew">
           <span>Film de </span>
@@ -81,6 +80,7 @@ Detail.propTypes = {
     runtime: PropTypes.number,
     poster_path: PropTypes.string,
     release_date: PropTypes.string,
+    vote_average: PropTypes.number,
     production_companies: PropTypes.arrayOf(
       PropTypes.shape({
         name: PropTypes.string,

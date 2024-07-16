@@ -1,9 +1,26 @@
+import { useEffect, useState } from "react";
+import axios from "axios";
 import Navbar from "../../components/Navbar";
 import LoginForm from "./LoginForm";
-import LoginImage from "../../assets/images/social-network.jpeg";
 import "../../styles/Login.css";
 
 function Login() {
+  const [response, setResponse] = useState();
+
+  useEffect(() => {
+    const url = "https://api.themoviedb.org/3/movie/37799/images";
+    axios
+      .get(url, {
+        params: {
+          api_key: import.meta.env.VITE_API_KEY,
+        },
+      })
+      .then((res) => {
+        console.info(res.data);
+        setResponse(res.data);
+      });
+  }, []);
+
   return (
     <>
       <div>
@@ -15,10 +32,12 @@ function Login() {
             <LoginForm />
           </div>
           <div className="login-img">
-            <img
-              src={LoginImage}
-              alt="Discussion scene between the main characters in the film The Social Network"
-            />
+            {response ? (
+              <img
+                src={`https://image.tmdb.org/t/p/original${response.backdrops[2].file_path}`}
+                alt="ImageP"
+              />
+            ) : null}
           </div>
         </div>
       </div>

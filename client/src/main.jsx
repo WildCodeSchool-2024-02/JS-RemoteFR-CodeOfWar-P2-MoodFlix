@@ -9,8 +9,10 @@ import Login from "./pages/login/Login";
 import Profile from "./pages/profile/Profile";
 import SignUp from "./pages/sign-up/SignUp";
 import Tag from "./pages/tag/Tag";
+import Cast from "./pages/cast/Cast";
 import fetchFilm, { fetchCrew, fetchImage } from "./utils/fetchFilm";
 import getMoviesByMood from "./services/getMoviesByMood";
+import fetchCast from "./services/fetchCast";
 import "./styles/profileCard.css";
 
 function loaderFilm({ params }) {
@@ -25,6 +27,11 @@ function loaderFilm({ params }) {
       };
     }
   );
+}
+
+function loaderCast({ params }) {
+  const { id } = params;
+  return fetchCast(id);
 }
 
 const router = createBrowserRouter([
@@ -53,6 +60,11 @@ const router = createBrowserRouter([
     path: "/mood/:mood",
     element: <Tag />,
     loader: ({ params }) => getMoviesByMood(params.mood),
+  },
+  {
+    path: "/actor/:id",
+    element: <Cast />,
+    loader: loaderCast,
   },
 ]);
 
