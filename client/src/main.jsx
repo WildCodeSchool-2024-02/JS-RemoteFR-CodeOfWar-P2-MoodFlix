@@ -1,11 +1,19 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
 
+import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App";
 import Film from "./pages/film/Film";
+import Login from "./pages/login/Login";
+import Profile from "./pages/profile/Profile";
+import SignUp from "./pages/sign-up/SignUp";
+import Tag from "./pages/tag/Tag";
+import Cast from "./pages/cast/Cast";
 import fetchFilm, { fetchCrew, fetchImage } from "./utils/fetchFilm";
+import getMoviesByMood from "./services/getMoviesByMood";
+import fetchCast from "./services/fetchCast";
+import "./styles/profileCard.css";
 
 function loaderFilm({ params }) {
   const { id } = params;
@@ -21,6 +29,11 @@ function loaderFilm({ params }) {
   );
 }
 
+function loaderCast({ params }) {
+  const { id } = params;
+  return fetchCast(id);
+}
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -28,11 +41,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/login",
-    element: <App />,
+    element: <Login />,
   },
   {
     path: "/signup",
-    element: <App />,
+    element: <SignUp />,
   },
   {
     path: "/film/:id",
@@ -41,11 +54,17 @@ const router = createBrowserRouter([
   },
   {
     path: "/profile",
-    element: <App />,
+    element: <Profile />,
   },
   {
     path: "/mood/:mood",
-    element: <App />,
+    element: <Tag />,
+    loader: ({ params }) => getMoviesByMood(params.mood),
+  },
+  {
+    path: "/actor/:id",
+    element: <Cast />,
+    loader: loaderCast,
   },
 ]);
 
