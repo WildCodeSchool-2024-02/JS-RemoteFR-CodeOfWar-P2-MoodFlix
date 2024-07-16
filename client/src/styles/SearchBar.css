@@ -1,0 +1,33 @@
+.search-bar {
+  position: relative;
+  color: white;
+}
+
+.search-bar > input,
+.search-bar > ul {
+  background-color: var(--secondary-black);
+  border: 1px white solid;
+  border-radius: 0.1rem;
+  padding: 0.2rem;
+}
+
+.search-bar > input {
+  z-index: 2;
+}
+
+.search-bar > ul {
+  z-index: 1;
+  width: 100%;
+  top: 150%;
+  position: absolute;
+  list-style: none;
+  padding: 0.5rem 0.6rem;
+}
+
+.search-bar > ul > li:hover {
+  text-decoration: underline;
+}
+
+.search-bar > ul > li:not(:last-child) {
+  margin-bottom: 0.4rem;
+}
