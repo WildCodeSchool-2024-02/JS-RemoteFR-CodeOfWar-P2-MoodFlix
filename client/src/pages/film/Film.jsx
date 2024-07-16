@@ -12,9 +12,6 @@ function Film() {
   return (
     <main className="film">
       <Navbar />
-      <div className="tagline">
-        <h2>{film.tagline}</h2>
-      </div>
       <Image />
 
       <Detail film={film} />
