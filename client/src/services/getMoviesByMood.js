@@ -106,12 +106,12 @@ export const moodTable = {
   },
 };
 
-export default function getMoviesByMood(mood) {
+export default function getMoviesByMood(mood, page = 1) {
   return tmdb
     .get("/discover/movie", {
       params: {
         with_genres: moodTable[mood]?.id || 28,
-        page: 1,
+        page,
       },
     })
     .then((response) => response.data);
