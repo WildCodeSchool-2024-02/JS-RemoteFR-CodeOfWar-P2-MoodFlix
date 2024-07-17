@@ -21,10 +21,12 @@ function LoginForm() {
   };
 
   const profileLink = () => {
-    if (email === 'kevin@wilder.com' && password === 'La_star_ac_C_trop_B1') {
-      return '/KevinProfile';
-    } if (email === 'cyrielle@wilder.com' && password === 'La_logique_C_logique') {
-      return '/CyrielleProfile';
+    console.info(import.meta.env.VITE_JOHN_DOE_EMAIL);
+    if (email === import.meta.env.VITE_JOHN_DOE_EMAIL && password === import.meta.env.VITE_JOHN_DOE_PASSWORD) {
+      return '/JohnDoeProfile';
+    }
+    if (email === import.meta.env.VITE_JANE_DOE_EMAIL && password === import.meta.env.VITE_JANE_DOE_PASSWORD) {
+      return '/JaneDoeProfile';
     }
     return '/Profile';
   };
