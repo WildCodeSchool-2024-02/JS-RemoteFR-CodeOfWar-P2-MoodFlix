@@ -5,7 +5,7 @@ import SignUpForm from "./SignUpForm";
 import "../../styles/SignUp.css";
 
 function random(min, max) {
-  return Math.round(Math.random() * (max - min) + min)
+  return Math.round(Math.random() * (max - min) + min);
 }
 const randomIndex = random(1, 35);
 

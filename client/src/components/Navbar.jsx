@@ -6,7 +6,9 @@ import SvgPeople from "../assets/svg/people.svg";
 export default function Navbar() {
   return (
     <nav className="site-navbar">
-      <h1 className="site-title">🎥 MoodFlix</h1>
+      <Link to="/">
+        <h1 className="site-title">🎥 MoodFlix</h1>
+      </Link>
 
       <div className="user-actions">
         <Link to="/SignUp">

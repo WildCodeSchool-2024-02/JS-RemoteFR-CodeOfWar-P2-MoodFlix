@@ -4,9 +4,8 @@ import Navbar from "../../components/Navbar";
 import LoginForm from "./LoginForm";
 import "../../styles/Login.css";
 
-
 function random(min, max) {
-  return Math.round(Math.random() * (max - min) + min)
+  return Math.round(Math.random() * (max - min) + min);
 }
 const randomIndex = random(1, 35);
 
