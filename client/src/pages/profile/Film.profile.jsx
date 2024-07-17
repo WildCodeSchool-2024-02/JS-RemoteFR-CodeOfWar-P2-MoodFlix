@@ -7,8 +7,8 @@ export default function FilmProfile({ film }) {
   return (
     <Link to={`/film/${film.id}`}>
       <motion.img
-        whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.9 }}
+        whileHover={{ scale: 1.2 }}
         src={baseImageUrl + film.poster_path}
         alt={film.title}
       />
