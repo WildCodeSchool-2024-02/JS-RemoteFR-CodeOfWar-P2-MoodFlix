@@ -1,0 +1,6 @@
+@import "./HeaderProfile.css";
+
+.profile {
+  max-width: 78%;
+  margin: 4rem auto;
+}
