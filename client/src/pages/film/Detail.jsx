@@ -40,7 +40,7 @@ export default function Detail({ film }) {
           <Rate progress={film.vote_average * 10} />
         ) : null}
       </div>
-      <div className="MiddlePart">
+      <div className="middlePart">
         <p>
           {durationHour !== 0 ? `${durationHour}h ` : ""}
           {durationMin !== 0 ? `${durationMin}min` : ""}
