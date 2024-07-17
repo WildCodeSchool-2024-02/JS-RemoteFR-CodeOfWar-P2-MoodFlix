@@ -46,6 +46,10 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color: inherit;
+}
+
 .user-buttons:hover {
   box-shadow: 0 0 20px;
 }

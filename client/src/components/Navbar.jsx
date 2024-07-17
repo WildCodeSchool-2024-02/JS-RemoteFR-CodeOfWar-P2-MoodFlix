@@ -7,7 +7,9 @@ import SearchBar from "./searchBar/SearchBar";
 export default function Navbar() {
   return (
     <nav className="site-navbar">
-      <h1 className="site-title">🎥 MoodFlix</h1>
+      <Link to="/">
+        <h1 className="site-title">🎥 MoodFlix</h1>
+      </Link>
 
       <div className="user-actions">
         <SearchBar />
