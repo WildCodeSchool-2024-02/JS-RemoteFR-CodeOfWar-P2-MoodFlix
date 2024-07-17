@@ -4,3 +4,44 @@
   max-width: 78%;
   margin: 4rem auto;
 }
+
+.profile > main {
+  margin-top: 5rem;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 0.5fr;
+  grid-template-rows: repeat(4, 0.5fr);
+}
+
+.profile > main > section > h2 {
+  font-size: 2rem;
+}
+
+.profile > main > section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.profile > main > section.recent-activity {
+  grid-row: 2;
+}
+
+.profile > main > section.favorite-films > div,
+.profile > main > section.recent-activity > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.profile > main > section.favorite-films > div > a,
+.profile > main > section.recent-activity > div > a,
+.profile > main > section.favorite-films > div > a > img,
+.profile > main > section.recent-activity > div > a > img {
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.profile > main > section.tags {
+  grid-column: 2;
+}
