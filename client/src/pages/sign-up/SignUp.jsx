@@ -4,6 +4,11 @@ import Navbar from "../../components/Navbar";
 import SignUpForm from "./SignUpForm";
 import "../../styles/SignUp.css";
 
+function random(min, max) {
+  return Math.round(Math.random() * (max - min) + min)
+}
+const randomIndex = random(1, 35);
+
 function SignUp() {
   const [response, setResponse] = useState();
 
@@ -33,7 +38,7 @@ function SignUp() {
           <div className="signup-img">
             {response ? (
               <img
-                src={`https://image.tmdb.org/t/p/original${response.backdrops[14].file_path}`}
+                src={`https://image.tmdb.org/t/p/original${response.backdrops[randomIndex].file_path}`}
                 alt="ImageP"
               />
             ) : null}
