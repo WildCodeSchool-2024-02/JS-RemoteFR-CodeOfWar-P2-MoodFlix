@@ -12,6 +12,7 @@ import Tag from "./pages/tag/Tag";
 import fetchFilm, { fetchCrew, fetchImage } from "./utils/fetchFilm";
 import getMoviesByMood from "./services/getMoviesByMood";
 import "./styles/profileCard.css";
+import getRandomMovie from "./services/getRandomMovie";
 
 function loaderFilm({ params }) {
   const { id } = params;
@@ -48,6 +49,7 @@ const router = createBrowserRouter([
   {
     path: "/profile",
     element: <Profile />,
+    loader: () => getRandomMovie(),
   },
   {
     path: "/mood/:mood",
