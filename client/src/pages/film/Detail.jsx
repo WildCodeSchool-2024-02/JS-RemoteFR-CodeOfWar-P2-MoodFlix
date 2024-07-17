@@ -36,7 +36,9 @@ export default function Detail({ film }) {
           src={baseImageUrl + film.poster_path}
           alt={film.title}
         />
-       {film.vote_average !==0 ?<Rate progress={film.vote_average * 10}/> : null} 
+        {film.vote_average !== 0 ? (
+          <Rate progress={film.vote_average * 10} />
+        ) : null}
       </div>
       <div className="MiddlePart">
         <p>
