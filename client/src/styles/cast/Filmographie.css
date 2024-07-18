@@ -9,6 +9,7 @@
   padding-left: 3rem;
   padding-right: 3rem;
   padding-top: 1rem;
+  border-radius: 1rem;
   box-shadow:
     rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
@@ -21,9 +22,13 @@
 }
 
 #shortly {
-  font-size: 2rem;
+  font-size: 1.8rem;
   align-self: center;
   margin-bottom: 1rem;
+}
+
+.filmographie a {
+  font-size: 1.6rem;
 }
 
 .filmographie > div > section > :first-child {

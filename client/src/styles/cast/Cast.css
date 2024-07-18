@@ -17,6 +17,7 @@ header {
 }
 
 .imgProfile {
+  border-radius: 0.8rem;
   max-width: 15rem;
   margin: 1rem;
   z-index: 2;
