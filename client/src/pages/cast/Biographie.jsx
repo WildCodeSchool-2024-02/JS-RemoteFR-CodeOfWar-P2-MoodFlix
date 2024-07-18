@@ -12,7 +12,8 @@ export default function Biographie() {
       <div className="bio">
         {cast.biography ? (
           <>
-            <h2>Biographie</h2> <p>{cast.biography}</p>
+            <h2>Biographie</h2>
+            <p id="bio-paragraph">{cast.biography}</p>
           </>
         ) : null}
       </div>
