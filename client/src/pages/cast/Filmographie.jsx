@@ -39,7 +39,7 @@ export default function Filmographie() {
           </p>
           {filmsSorted &&
             filmsSorted[year].map((film) => (
-              <LineFilm key={film.id} film={film} />
+              <LineFilm desactivate={year} key={film.id} film={film} />
             ))}
           <hr />
         </div>
