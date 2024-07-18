@@ -26,6 +26,8 @@ export default function HomeImages() {
                   y: 0,
                   transition: { duration: index * 0.2 },
                 }}
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 1 }}
               />
             </Link>
           ))
