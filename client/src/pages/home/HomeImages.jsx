@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import fetchMovies from "../utils/fetchMovies";
-import baseImageUrl from "../utils/baseImageUrl";
-import "../styles/HomeImages.css";
+import fetchMovies from "../../utils/fetchMovies";
+import baseImageUrl from "../../utils/baseImageUrl";
+import "../../styles/HomeImages.css";
 
 export default function HomeImages() {
   const [movies, setMovies] = useState(null);

@@ -1,9 +1,9 @@
-import Navbar from "./components/Navbar";
-import HomeImages from "./components/HomeImages";
-import HomeCard from "./components/HomeCard";
-import "./styles/Global.css";
-import "./styles/HomeCard.css";
-import "./styles/HomePage.css";
+import Layout from "../../components/layout/Layout";
+import HomeImages from "./HomeImages";
+import HomeCard from "./HomeCard";
+import "../../styles/Global.css";
+import "../../styles/HomeCard.css";
+import "../../styles/HomePage.css";
 
 const cardsData = [
   {
@@ -26,10 +26,9 @@ const cardsData = [
   },
 ];
 
-function App() {
+export default function Home() {
   return (
-    <main className="homepage">
-      <Navbar />
+    <Layout className="homepage">
       <section className="left">
         <h2>
           Votre écran, votre passion,
@@ -50,8 +49,6 @@ function App() {
         </div>
       </section>
       <HomeImages />
-    </main>
+    </Layout>
   );
 }
-
-export default App;
