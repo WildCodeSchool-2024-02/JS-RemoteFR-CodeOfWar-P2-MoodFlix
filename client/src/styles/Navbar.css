@@ -46,6 +46,10 @@ a {
   text-decoration: none;
 }
 
+a:visited {
+  color: inherit;
+}
+
 .user-buttons:hover {
   box-shadow: 0 0 20px;
 }
@@ -65,9 +69,10 @@ nav.site-navbar {
   padding: 2.4rem 3rem;
 }
 
-nav.site-navbar > h1 {
+.site-title {
   font-size: 2.5rem;
   font-weight: 400;
+  font-weight: bold;
 }
 
 nav.site-navbar:has(+ main.film),
@@ -78,4 +83,33 @@ nav.site-navbar:has(+ main.cast) {
   -webkit-backdrop-filter: blur(1px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* SMARTPHONE RSPONSIVE */
+
+@media (max-width: 480px) {
+  .site-navbar {
+    padding: 1rem 0.5rem;
+  }
+
+  nav.site-navbar {
+    padding: 0.8rem;
+  }
+
+  .site-title {
+    margin-top: 3rem;
+    font-size: 1.8rem;
+  }
+
+  .user-actions {
+    flex-direction: column-reverse;
+    gap: 0.5rem;
+    margin-top: 1.2rem;
+  }
+
+  .user-buttons {
+    font-size: 0.8rem;
+    padding: 0.4rem;
+    width: 10rem;
+  }
 }

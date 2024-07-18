@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
-export default function Suggestion({ children }) {
+export default function Suggestion({ children, className }) {
   return (
-    <li>
+    <li className={className}>
       <Link to={`/mood/${children}`}>{children}</Link>
     </li>
   );
@@ -11,4 +11,5 @@ export default function Suggestion({ children }) {
 
 Suggestion.propTypes = {
   children: PropTypes.string.isRequired,
+  className: PropTypes.string.isRequired,
 };

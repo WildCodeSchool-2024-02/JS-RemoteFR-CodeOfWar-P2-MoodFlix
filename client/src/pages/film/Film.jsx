@@ -10,16 +10,14 @@ function Film() {
   const { film } = useLoaderData();
 
   return (
-    <div className="filmContainer">
-      <Layout className="film">
-        <Image />
-        <Detail film={film} />
-        <section className="secondPart">
-          <Synopsis />
-          <Crew />
-        </section>
-      </Layout>
-    </div>
+    <Layout className="film">
+      <Image />
+      <Detail film={film} />
+      <section className="secondPart">
+        <Synopsis />
+        <Crew />
+      </section>
+    </Layout>
   );
 }
 

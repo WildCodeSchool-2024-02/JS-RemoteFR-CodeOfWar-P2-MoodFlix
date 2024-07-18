@@ -34,7 +34,9 @@ export default function Filmographie() {
     <section className="filmographie">
       {years.slice(0, visibleCount).map((year) => (
         <div key={year}>
-          <u>{year || "Prochainement"}</u>
+          <p id="shortly">
+            <u>{year || "Prochainement"}</u>
+          </p>
           {filmsSorted &&
             filmsSorted[year].map((film) => (
               <LineFilm key={film.id} film={film} />
