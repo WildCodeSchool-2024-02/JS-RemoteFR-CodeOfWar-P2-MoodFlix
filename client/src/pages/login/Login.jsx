@@ -21,7 +21,6 @@ function Login() {
         },
       })
       .then((res) => {
-        console.info(res.data);
         setResponse(res.data);
       });
   }, []);

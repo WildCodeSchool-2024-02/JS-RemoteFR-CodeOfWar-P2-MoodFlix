@@ -8,7 +8,7 @@ export default function BestMovie() {
   return (
     <div className="bestMovie">
       {importantFilm.map((film) => (
-        <div className="poster" key={film.id}>
+        <div className="moviePoster" key={film.id}>
           <img src={baseImageUrl + film.poster_path} alt={film.title} />
         </div>
       ))}

@@ -8,6 +8,7 @@ import Layout from "../../components/layout/Layout";
 
 function Film() {
   const { film } = useLoaderData();
+
   return (
     <Layout className="film">
       <Image />
