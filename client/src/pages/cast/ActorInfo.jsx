@@ -18,7 +18,8 @@ export default function ActorInfo() {
   const birth = new Date(cast.birthday);
   const death = new Date(cast.deathday);
   const today = new Date();
-  const age = ageNow(today, birth, death);
+  const age = ageNow(today, birth, death, cast.deathday);
+
   return (
     <div className="detailActor">
       <p>
@@ -32,7 +33,7 @@ export default function ActorInfo() {
       </p>
       <p>
         Date de naissance : <br />
-        {cast.birthday} ({age} ans)
+        {birth.toLocaleDateString("fr-FR")} ({age} ans)
       </p>
       <p>
         Lieu de naissance : <br />
@@ -41,7 +42,7 @@ export default function ActorInfo() {
       {cast.deathday ? (
         <p className="death">
           Date de décès : <br />
-          {cast.deathday}
+          {death.toLocaleDateString("fr-FR")}
         </p>
       ) : null}
     </div>
