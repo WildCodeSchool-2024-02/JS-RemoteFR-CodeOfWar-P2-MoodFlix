@@ -10,8 +10,13 @@ header {
   margin-bottom: 2rem;
 }
 
+.img-profile-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
 .imgProfile {
-  max-height: 25rem;
   max-width: 15rem;
   margin: 1rem;
   z-index: 2;
@@ -63,7 +68,7 @@ main.cast > section {
   margin-top: 1rem;
 }
 
-.imgProfile:has(+ section > div > p.death) {
+.img-profile-container:has(+ section > div > p.death) > img {
   box-shadow: 0 8px 32px 0 rgb(255, 255, 255);
 }
 
@@ -83,9 +88,10 @@ h2 {
     flex-direction: column;
   }
 
-  .imgProfile {
-    width: 100%;
-    height: auto;
+  .img-profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .detailActor {
@@ -105,10 +111,6 @@ h2 {
   .biographie > div > p {
     font-size: 1.4rem;
     width: 9rem;
-  }
-
-  .bio {
-    padding: 0;
   }
 
   #bio-paragraph {
