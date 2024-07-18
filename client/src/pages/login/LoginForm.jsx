@@ -5,8 +5,8 @@ import closedEye from "../../assets/images/visibility_off.png";
 
 function LoginForm() {
   const [visible, setVisible] = useState(false);
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const toggleVisibility = () => {
     setVisible(!visible);
@@ -22,13 +22,19 @@ function LoginForm() {
 
   const profileLink = () => {
     console.info(import.meta.env.VITE_JOHN_DOE_EMAIL);
-    if (email === import.meta.env.VITE_JOHN_DOE_EMAIL && password === import.meta.env.VITE_JOHN_DOE_PASSWORD) {
-      return '/JohnDoeProfile';
+    if (
+      email === import.meta.env.VITE_JOHN_DOE_EMAIL &&
+      password === import.meta.env.VITE_JOHN_DOE_PASSWORD
+    ) {
+      return "/JohnDoeProfile";
     }
-    if (email === import.meta.env.VITE_JANE_DOE_EMAIL && password === import.meta.env.VITE_JANE_DOE_PASSWORD) {
-      return '/JaneDoeProfile';
+    if (
+      email === import.meta.env.VITE_JANE_DOE_EMAIL &&
+      password === import.meta.env.VITE_JANE_DOE_PASSWORD
+    ) {
+      return "/JaneDoeProfile";
     }
-    return '/Profile';
+    return "/Profile";
   };
 
   return (
