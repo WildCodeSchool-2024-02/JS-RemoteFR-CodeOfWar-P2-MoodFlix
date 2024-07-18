@@ -11,6 +11,7 @@ export default function Cast() {
       <BestMovie />
       <header>
         <ImgCast />
+
         <Biographie />
       </header>
       <Filmographie />

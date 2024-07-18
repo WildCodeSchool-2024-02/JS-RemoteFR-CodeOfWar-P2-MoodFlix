@@ -5,10 +5,12 @@ import "../../styles/cast/Cast.css";
 export default function ImgCast() {
   const { cast } = useLoaderData();
   return (
-    <img
-      src={baseImageUrl + cast.profile_path}
-      alt={cast.name}
-      className="imgProfile"
-    />
+    <div className="img-profile-container">
+      <img
+        src={baseImageUrl + cast.profile_path}
+        alt={cast.name}
+        className="imgProfile"
+      />
+    </div>
   );
 }
