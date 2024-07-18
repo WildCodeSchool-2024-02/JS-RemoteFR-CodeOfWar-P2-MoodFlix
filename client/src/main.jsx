@@ -3,7 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import App from "./App";
+import Home from "./pages/home/Home";
 import Film from "./pages/film/Film";
 import Login from "./pages/login/Login";
 import Profile from "./pages/profile/Profile";
@@ -14,6 +14,7 @@ import fetchFilm, { fetchCrew, fetchImage } from "./utils/fetchFilm";
 import getMoviesByMood from "./services/getMoviesByMood";
 import fetchCast from "./services/fetchCast";
 import "./styles/profileCard.css";
+import getRandomMovie from "./services/getRandomMovie";
 
 function loaderFilm({ params }) {
   const { id } = params;
@@ -37,7 +38,7 @@ function loaderCast({ params }) {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Home />,
   },
   {
     path: "/login",
@@ -55,6 +56,7 @@ const router = createBrowserRouter([
   {
     path: "/profile",
     element: <Profile />,
+    loader: () => getRandomMovie(),
   },
   {
     path: "/mood/:mood",

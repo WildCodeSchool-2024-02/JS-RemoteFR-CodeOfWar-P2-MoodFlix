@@ -125,3 +125,34 @@
 .login-button:hover {
   box-shadow: 0 0 20px;
 }
+
+/* SMARTPHONE RESPONSIVE */
+
+@media (max-width: 480px) {
+  .login-container {
+    flex-direction: column-reverse;
+    width: 90%;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 1rem;
+  }
+
+  .login-img img {
+    border-radius: 1rem 1rem 0 0;
+  }
+
+  .form-container {
+    padding: 1rem;
+  }
+
+  .login-form-container h2 {
+    margin-top: 0.5rem;
+    margin-left: 0;
+
+    font-size: 1.5rem;
+  }
+
+  .login-form-container form {
+    margin-left: 0;
+  }
+}

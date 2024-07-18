@@ -19,6 +19,7 @@
   flex-direction: column;
   margin-bottom: 1rem;
 }
+
 .filmographie > div > u {
   font-size: 2.1rem;
   align-self: center;
@@ -33,6 +34,7 @@
 img[alt="point"] {
   margin-right: 1rem;
 }
+
 .role {
   font-size: 1.5rem;
   margin-bottom: 1rem;
@@ -45,4 +47,26 @@ img[alt="point"] {
   box-shadow:
     rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+/* SMARTPHONE RSPONSIVE  */
+
+@media (max-width: 480px) {
+  #shortly {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .filmographie p {
+    font-size: 1.5rem;
+  }
+
+  .filmographie a {
+    font-size: 1.5rem;
+  }
+
+  .filmographie button {
+    font-size: 1.2rem;
+  }
 }

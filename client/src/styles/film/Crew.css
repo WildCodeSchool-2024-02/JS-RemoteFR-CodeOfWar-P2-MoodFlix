@@ -19,3 +19,8 @@ div.actor > div {
   color: white;
   box-shadow: #18122b;
 }
+
+.actor > span,
+.castingList > .actor > a > .role {
+  font-size: 16px;
+}

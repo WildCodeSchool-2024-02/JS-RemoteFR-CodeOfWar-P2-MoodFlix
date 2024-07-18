@@ -4,6 +4,11 @@ import Navbar from "../../components/Navbar";
 import LoginForm from "./LoginForm";
 import "../../styles/Login.css";
 
+function random(min, max) {
+  return Math.round(Math.random() * (max - min) + min);
+}
+const randomIndex = random(1, 35);
+
 function Login() {
   const [response, setResponse] = useState();
 
@@ -16,7 +21,6 @@ function Login() {
         },
       })
       .then((res) => {
-        console.info(res.data);
         setResponse(res.data);
       });
   }, []);
@@ -34,7 +38,7 @@ function Login() {
           <div className="login-img">
             {response ? (
               <img
-                src={`https://image.tmdb.org/t/p/original${response.backdrops[2].file_path}`}
+                src={`https://image.tmdb.org/t/p/original${response.backdrops[randomIndex].file_path}`}
                 alt="ImageP"
               />
             ) : null}

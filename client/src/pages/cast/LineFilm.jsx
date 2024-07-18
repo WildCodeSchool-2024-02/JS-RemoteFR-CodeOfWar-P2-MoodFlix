@@ -4,12 +4,12 @@ import "../../styles/cast/Cast.css";
 import "../../styles/cast/Filmographie.css";
 import Button from "../../assets/svg/Button.svg";
 
-export default function LineFilm({ film }) {
+export default function LineFilm({ film, desactivate }) {
   return (
     <section>
       <p>
         <img src={Button} alt="point" />
-        <Link to={`/film/${film.id}`} key={film.id}>
+        <Link to={!desactivate ? "/404" : `/film/${film.id}`} key={film.id}>
           {film.title}
         </Link>
       </p>
@@ -23,4 +23,5 @@ LineFilm.propTypes = {
     character: PropTypes.string,
     id: PropTypes,
   }).isRequired,
+  desactivate: PropTypes.bool.isRequired,
 };

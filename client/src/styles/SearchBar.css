@@ -31,3 +31,7 @@
 .search-bar > ul > li:not(:last-child) {
   margin-bottom: 0.4rem;
 }
+
+.search-bar > ul > li.selected {
+  background-color: white;
+}
