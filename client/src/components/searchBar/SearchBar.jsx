@@ -1,14 +1,12 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { moodTable } from "../../services/getMoviesByMood";
 import Suggestion from "./Suggestion";
-import "../../styles/SearchBar.css";
 import findSimilarMood from "../../utils/findSimilarMood";
+import "../../styles/SearchBar.css";
 
 const suggestionsList = Object.keys(moodTable);
 
 export default function SearchBar() {
-  const navigate = useNavigate();
   const [search, setSearch] = useState("");
   const [suggestions, setSuggestions] = useState([]);
 
@@ -27,7 +25,9 @@ export default function SearchBar() {
   };
 
   const handleKeyChange = (event) => {
-    if (event.key === "Enter") navigate(`/mood/${findSimilarMood(search)}`);
+    if (event.key === "Enter") {
+      window.location.href = `/mood/${findSimilarMood(search)}`;
+    }
   };
 
   return (
