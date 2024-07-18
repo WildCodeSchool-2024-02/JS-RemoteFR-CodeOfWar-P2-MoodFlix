@@ -48,6 +48,7 @@ h1 {
     background: none;
     z-index: 0;
     position: relative;
+    height: auto;
   }
   .leftPart > h1 {
     font-size: 32px;
