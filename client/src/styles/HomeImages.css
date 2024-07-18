@@ -18,12 +18,12 @@ section.home-image {
     transform: translate(-50%, -50%);
   }
 
-  section.home-image > img {
+  section.home-image > a > img {
     width: 15rem;
     cursor: pointer;
   }
 
-  section.home-image > img:nth-child(5) {
+  section.home-image > a:nth-child(5) {
     margin-left: 7.5%;
   }
 }
