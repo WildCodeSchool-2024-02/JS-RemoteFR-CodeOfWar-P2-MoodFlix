@@ -1,0 +1,75 @@
+.detail {
+  height: 30rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #18122b80;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  z-index: 2;
+  margin-top: 15%;
+  padding-bottom: 2rem;
+  font-size: 32px;
+}
+
+h1 {
+  font-size: 32px;
+  margin: 0.5rem;
+}
+.poster {
+  width: 213px;
+  margin: 1rem;
+}
+
+.logo {
+  height: 3rem;
+}
+
+.middlePart {
+  display: flex;
+  flex-direction: column;
+}
+
+.genre > p {
+  margin-top: 2rem;
+}
+
+.rightPart > div > p {
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+  .detail {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    z-index: 0;
+    position: relative;
+    height: auto;
+  }
+  .leftPart > h1 {
+    font-size: 32px;
+  }
+  .poster {
+    margin-left: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .leftPart {
+    margin-bottom: 1.5rem;
+  }
+
+  .middlePart,
+  .genre,
+  .rightPart {
+    box-shadow:
+      rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    background-color: #292048e2;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+}

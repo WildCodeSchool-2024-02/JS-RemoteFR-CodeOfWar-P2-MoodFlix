@@ -1,0 +1,22 @@
+.HomeCard {
+  display: flex;
+  width: 26rem;
+  padding: 1.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  border-radius: 8px;
+  background: linear-gradient(96deg, #393053 0%, #635986 100%);
+  cursor: pointer;
+}
+
+.HomeCard > h2 {
+  font-size: 1.6rem;
+}
+
+main.homepage > section.left > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}

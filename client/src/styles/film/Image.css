@@ -1,0 +1,6 @@
+.imgBg {
+  width: 100%;
+  position: absolute;
+  max-height: 120%;
+  top: -30px;
+}

@@ -1,0 +1,72 @@
+.filmographie {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 50rem;
+  margin: auto;
+  background-color: #272137;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 1rem;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.filmographie > div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+#shortly {
+  font-size: 2rem;
+  align-self: center;
+  margin-bottom: 1rem;
+}
+
+.filmographie > div > section > :first-child {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+img[alt="point"] {
+  margin-right: 1rem;
+}
+
+.role {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-indent: 1rem;
+}
+
+.filmographie > button {
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+/* SMARTPHONE RSPONSIVE  */
+
+@media (max-width: 480px) {
+  #shortly {
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .filmographie p {
+    font-size: 1.5rem;
+  }
+
+  .filmographie a {
+    font-size: 1.5rem;
+  }
+
+  .filmographie button {
+    font-size: 1.2rem;
+  }
+}
